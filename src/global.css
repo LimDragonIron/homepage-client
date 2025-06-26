@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+/* ====== 기본 폰트, 오버스크롤 ====== */
+html, body {
+  @apply font-sans;
+  overscroll-behavior: none;
+  min-height: 100vh;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+/* ====== body 기본 배경/글자색은 Tailwind로 조정 ========== */
+/* ex) <body class="bg-neutral-100 text-gray-900"> 처럼 사용 */
+
+/* ====== 헤드라인/타이틀 ====== */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-extrabold uppercase tracking-wide mb-2 font-sans text-gray-900;
+  text-shadow: 1px 2px 14px rgba(0,0,0,0.13);
+}
+
+/* ====== 링크 ====== */
+a {
+  @apply text-blue-700 underline font-bold transition-colors;
+}
+a:hover {
+  @apply text-blue-500;
+}
+
+/* ====== 버튼 ====== */
+button {
+  @apply font-bold bg-white text-gray-900 border-none rounded-md shadow py-2 px-6 text-base uppercase transition;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,0.12);
+}
+button:hover, button:focus {
+  @apply bg-yellow-300 text-gray-900;
+  box-shadow: 0 4px 24px 0 rgba(255,225,107,0.17);
+}
+
+/* ====== 카드/섹션 ====== */
+.section-card {
+  @apply bg-white text-gray-900 border-2 rounded-xl shadow-lg p-8 my-6 transition;
+  border-color: #181818;
+}
+
+.section-card-dark {
+  @apply bg-gray-900 text-white border-2 rounded-xl shadow-lg p-8 my-6 transition;
+  border-color: #fff;
+}
+
+/* ====== 스크롤바 (Tailwind 기본 지원 X, 커스텀 유지) ====== */
+::-webkit-scrollbar-thumb {
+  background: #ffe16b;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+/* ====== 기타 ====== */
+hr {
+  border: 0;
+  border-top: 2px solid #222;
+  margin: 2.5em 0;
+}
+
+input, textarea, select {
+  @apply bg-gray-900 text-white border rounded-md py-2 px-4 transition;
+  border: 1.5px solid #ffe16b;
+  font-family: inherit;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #fff;
+}
