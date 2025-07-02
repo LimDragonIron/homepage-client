@@ -19,7 +19,7 @@ export function Footer() {
   return (
     <footer
       id="company"
-      className="w-full bg-[#fffdfa] bg-[url('/comic-paper.png')] bg-repeat bg-[length:340px_340px] border-t-4 border-black py-4 xs:py-8 mt-10 flex flex-col items-center gap-2 comic-panel"
+      className="w-full bg-[#fffdfa] border-t-4 border-black py-4 xs:py-8 mt-10 flex flex-col items-center gap-2 comic-panel"
     >
       <div className="font-extrabold text-blue-900 text-base xs:text-lg comic-title">
         {company?.name || "회사명"}

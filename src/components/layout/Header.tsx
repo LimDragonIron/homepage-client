@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FaGamepad } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ContactDialog } from "@/components/ui/ContactDialog";
@@ -62,12 +61,8 @@ export function Header() {
         className="flex items-center gap-2 focus-visible:outline-dashed py-1"
         aria-label="홈으로 이동"
       >
-        <FaGamepad
-          className="text-pink-600 text-2xl sm:text-3xl"
-          style={{ filter: "drop-shadow(0px 1px 0px #fffbe6) drop-shadow(0 2px 6px #ffd6e0)" }}
-        />
         <span className="font-extrabold text-lg sm:text-xl text-blue-700 tracking-tight select-none whitespace-nowrap">
-          DragonIron Games
+          JoiePot
         </span>
       </Link>
 
