@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ====== 링크 ====== */
 a {
-  @apply text-blue-700 underline font-bold transition-colors;
+  @apply text-blue-700 font-bold transition-colors;
 }
 a:hover {
   @apply text-blue-500;
