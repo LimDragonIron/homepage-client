@@ -96,8 +96,6 @@ const HeroSection = forwardRef<HTMLElement, React.HTMLProps<HTMLElement>>((props
           <span className="text-gray-400 text-2xl">활성화된 히어로 없음</span>
         </div>
       )}
-      {/* 오버레이 효과 */}
-      <div className="absolute inset-0 bg-black/20 backdrop-blur-sm z-10" />
     </section>
   );
 });
